@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="21.js" defer></script>
+
+
+</head>
+
+<body>
+    <label for="specie">Specie:</label>
+    <input type="text" id="specie" name="Specie" ><br><br>
+
+    <label for="tailLong">Tail long:</label>
+    <input type="text" id="tailLong" name="tailLong"><br><br>
+
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color"><br><br>
+
+    <label for="hasHorn">Has horn:</label>
+    <input type="radio" id="hasHorn" name="hasHorn" value="Yes">
+
+    <label for="noHorn">No horn:</label>
+    <input type="radio" id="noHorn" name="hasHorn" value="No"><br><br>
+
+    <button>Create</button><br><br>
+<button  id="sort_specie">Sort by Name</button>
+    <button id="sort_tail_long">Sort by tale</button> 
+
+<input type="radio" id="sort_asc" name="sortas" checked>
+    <label for="sort_asc"  >ASC:</label>
+    
+    <input type="radio"  id="sort_desc" name="sortas"  >
+    <label for="sort_desc" >DSC</label>
+    <br><br>
+
+    <label for="zoo">Filter:</label>
+<select id="zoo" name="zoo">
+  <!-- <option value="specie">Specie</option>
+  <option value="tailLong">Tail long</option>
+  <option value="color">Color</option>
+  <option value="horn">Has horn</option>
+  <option value="nohorn">No hornr</option> -->
+</select>
+
+<button id="filter">Filter</button>
+<button id="show_all">Reset</button>
+    
+    
+    <br><br>
+
+    <!-- Modal -->
+
+    <div id="edit" class="modal fade" tabindex="-1" role="dialog" style="opacity: 1; display: block; border:1px solid black; width: 200px; display: none; ">
+
+        <div class="modal-dialog modal-dialog-centered" role="document" >
+
+            <div class="modal-content" >
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Edit animal</h5>
+
+                    <!-- <button type="button" class="close" data-dismiss="modal">
+
+                        <span aria-hidden="true">&times;</span>
+
+                    </button> -->
+
+                </div>
+
+                <div class="modal-body">
+
+                    <label for="specie">Specie:</label>
+                    <input type="text" id="speciem" name="Specie" ><br><br>
+
+                    <label for="tailLong">Tail long:</label>
+                    <input type="text" id="tailLongm" name="tailLong" ><br><br>
+
+                    <label for="color">Color:</label>
+                    <input type="text" id="colorm" name="color"><br><br>
+
+                    <label for="hasHorn">Has horn:</label>
+                    <input type="radio" id="hasHornm" name="hasHornm" value="Yes">
+
+                    <label for="noHorn">No horn:</label>
+                    <input type="radio" id="noHornm" name="hasHornm" value="No"><br><br>
+
+                 
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+
+                    <button type="button" class="btn-primary">Save changes</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+        <!-- Confirm deete -->
+        <div id="delete" class="modal fade" tabindex="-1" role="dialog" style="opacity: 1; display: block; border:1px solid black; width: 150px; display:none  ">
+
+            <div class="modal-dialog modal-dialog-centered" role="document" >
+    
+                <div class="modal-content" >
+    
+                    <div class="modal-header">
+    
+                        <h5 class="modal-title">Confirm delete?</h5>
+    
+                        <!-- <button type="button" class="close" data-dismiss="modal">
+    
+                            <span aria-hidden="true">&times;</span>
+    
+                        </button> -->
+    
+                    </div>
+    
+                    <!-- <div class="modal-body">   
+                         
+                     
+                    </div> -->
+    
+                    <div class="modal-footer">
+    
+                        <button type="button" class="btn-delete" data-dismiss="modal">YES</button>
+    
+                        <button type="button" class="btn-nodelete">NO</button>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            </div>
+
+</body>
+
+</html>

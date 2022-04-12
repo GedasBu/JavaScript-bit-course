@@ -1,0 +1,37 @@
+body {
+   width: 100vw;
+   height: 100vh;
+   display: flex; 
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+
+   
+}
+.book{
+    padding: 10px;
+    border: 1px solid red;
+    width: 250px;
+    height: 450px;
+    margin:10px;
+     
+
+}
+
+#shelf{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 10px;
+}
+
+.no-cover{
+    background-color: lightgray;
+}
+.pink-cover{
+    background-color: pink;
+}
+.green-cover{
+    background-color: lightgreen;
+}
